@@ -20,7 +20,7 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="I’m Sam, a software Developer based in England. Welcome to my portfolio website where you can learn more about me and my projects I've worked on."
+          content="I&apos;m Sam, a software Developer based in England. Welcome to my portfolio website where you can learn more about me and my projects I've worked on."
         />
       </Head>
       <Container className="mt-9">
@@ -29,7 +29,7 @@ export default function Home() {
             Software developer, animal lover, and traveller.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Sam, a software Developer based in England. Welcome to my portfolio website where you can learn more about me and my projects I've worked on.
+          I&apos;m Sam, a software Developer based in England. Welcome to my portfolio website where you can learn more about me and my projects I've worked on.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -51,8 +51,7 @@ export default function Home() {
               href="https://linkedin.com"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
-            >
-            </SocialLink>
+            />
           </div>
         </div>
       </Container>
