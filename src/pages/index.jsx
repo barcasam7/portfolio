@@ -29,7 +29,7 @@ export default function Home() {
             Software developer, animal lover, and traveller.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I`&#39;`m Sam, a software Developer based in England. Welcome to my portfolio website where you can learn more about me and my projects I`&#39;`ve worked on.
+          I&#39;m Sam, a software Developer based in England. Welcome to my portfolio website where you can learn more about me and my projects I&#39;ve worked on.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
