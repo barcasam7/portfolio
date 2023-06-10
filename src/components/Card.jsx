@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import clsx from 'clsx'
 
 function ChevronRightIcon(props) {
   return (
@@ -17,7 +16,7 @@ function ChevronRightIcon(props) {
 export function Card({ as: Component = 'div', className, children }) {
   return (
     <Component
-      className={clsx(className, 'group relative flex flex-col items-start')}
+      className={`${className} group relative flex flex-col items-start`}
     >
       {children}
     </Component>
@@ -73,11 +72,8 @@ Card.Eyebrow = function CardEyebrow({
 }) {
   return (
     <Component
-      className={clsx(
-        className,
-        'relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500',
-        decorate && 'pl-3.5'
-      )}
+      className={`${className}dark:text-zinc-500', decorate && 'pl-3.5' relative z-10 order-first mb-3 flex
+        items-center text-sm text-zinc-400`}
       {...props}
     >
       {decorate && (

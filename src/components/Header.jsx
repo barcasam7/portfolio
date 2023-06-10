@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
-import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.jpg'
@@ -142,12 +141,12 @@ function NavItem({ href, children }) {
     <li>
       <Link
         href={href}
-        className={clsx(
-          'relative block px-3 py-2 transition',
+        className={`transition' relative block px-3 py-2 ${
           isActive
             ? 'text-teal-500 dark:text-teal-400'
             : 'hover:text-teal-500 dark:hover:text-teal-400'
-        )}
+        }
+        `}
       >
         {children}
         {isActive && (
@@ -216,10 +215,7 @@ function clamp(number, a, b) {
 function AvatarContainer({ className, ...props }) {
   return (
     <div
-      className={clsx(
-        className,
-        'h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10'
-      )}
+      className={`${className} h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10`}
       {...props}
     />
   )
@@ -230,17 +226,16 @@ function Avatar({ large = false, className, ...props }) {
     <Link
       href="/"
       aria-label="Home"
-      className={clsx(className, 'pointer-events-auto')}
+      className={`${className} pointer-events-auto`}
       {...props}
     >
       <Image
         src={avatarImage}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
-        className={clsx(
-          'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
+        className={`dark:bg-zinc-800' rounded-full bg-zinc-100 object-cover ${
           large ? 'h-16 w-16' : 'h-9 w-9'
-        )}
+        }`}
         priority
       />
     </Link>

@@ -54,25 +54,25 @@ const Photos = () => {
       <div className="-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {images.map((image, imageIndex) => (
           <div
-            class={`${image.rotations} group relative cursor-pointer items-center justify-center overflow-hidden rounded-xl transition-shadow hover:shadow-xl hover:shadow-black/30`}
+            className={`${image.rotations} group relative cursor-pointer items-center justify-center overflow-hidden rounded-xl transition-shadow hover:shadow-xl hover:shadow-black/30`}
+            key={image.id}
           >
-            <div class="h-96 w-72">
+            <div className="h-96 w-72">
               <Image
-                key={image.id}
                 src={image.image}
                 alt=""
                 sizes="(min-width: 640px) 18rem, 11rem"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
               />
             </div>
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div
-              class={`absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 ${image.textRotation}`}
+              className={`absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 ${image.textRotation}`}
             >
-              <h1 class="font-dmserif text-3xl font-bold text-white">
+              <h1 className="font-dmserif text-3xl font-bold text-white">
                 {image.country}
               </h1>
-              <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 {image.location}
               </p>
             </div>
