@@ -3,7 +3,6 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import clsx from 'clsx'
 import Image from 'next/image'
 
 const images = [
@@ -55,24 +54,27 @@ const Photos = () => {
       <div className="-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {images.map((image, imageIndex) => (
           <div
-            key={image.id}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              [image.rotations]
-            )}
+            class={`${image.rotations} group relative cursor-pointer items-center justify-center overflow-hidden rounded-xl transition-shadow hover:shadow-xl hover:shadow-black/30`}
           >
-            <Image
-              src={image.image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="hover:[transform: scale(1.2);] absolute inset-0 h-full w-full object-cover transition-all duration-700"
-            />
-            {/* <div
-              className={`flex h-full flex-col content-center justify-center p-5 text-center ${image.textRotation}`}
+            <div class="h-96 w-72">
+              <Image
+                src={image.image}
+                alt=""
+                sizes="(min-width: 640px) 18rem, 11rem"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+              />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div
+              class={`absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 ${image.textRotation}`}
             >
-              <h3 className="uppercase">{image.country}</h3>
-              <p className="text-slate-500">{image.location}</p>
-            </div> */}
+              <h1 class="font-dmserif text-3xl font-bold text-white">
+                {image.country}
+              </h1>
+              <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                {image.location}
+              </p>
+            </div>
           </div>
         ))}
       </div>
