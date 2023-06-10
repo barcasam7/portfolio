@@ -58,6 +58,7 @@ const Photos = () => {
           >
             <div class="h-96 w-72">
               <Image
+                key={image.id}
                 src={image.image}
                 alt=""
                 sizes="(min-width: 640px) 18rem, 11rem"
