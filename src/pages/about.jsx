@@ -47,7 +47,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I'm Sam Ward. I live in England and work fully remote.
+              I&apos;m Sam Ward. I live in England and work fully remote.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
@@ -62,13 +62,14 @@ export default function About() {
                 I have lived both in Australia and the UK. I spent most of my
                 time living in Western Australia, Perth which was a great
                 experience for me. I am not afraid to go outside my comfort
-                zone. As I believe that's the best way to challenge yourself.
+                zone. As I believe that&apos;s the best way to challenge
+                yourself.
               </p>
               <p>
                 Apart from being a developer, I enjoy travelling and immersing
                 in different cultures. My aim is to travel 50 countries by the
-                time I'm 40. I care about the environment and our planet. I have
-                a keen interest renewable energy and the shift to
+                time I&apos;m 40. I care about the environment and our planet. I
+                have a keen interest renewable energy and the shift to
                 electrification.
               </p>
               <p>
