@@ -11,40 +11,19 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Spotify Profile',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'A React, Node and Typescript based application using Spotify\'s API to get your playlists and favorite arists. ',
+    link: { href: 'https://my-spotify-profile.vercel.app', label: 'my-spotify-profile' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'React Components',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'A web page of several components built using React and Typescript.',
+    link: { href: 'https://react-components-seven-kappa.vercel.app/', label: 'react-components' },
     logo: logoAnimaginary,
-  },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+  }
 ]
 
 function LinkIcon(props) {
@@ -65,12 +44,12 @@ export default function Projects() {
         <title>Projects - Sam Ward</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Things I've made in my spare time."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Things I've made in my spare time."
+        intro="A few small projects I've made in my own time away from work."
       >
         <ul
           role="list"
