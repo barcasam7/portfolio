@@ -34,7 +34,7 @@ const projects = [
     description: 'Several components built using Vue 3 and Typescript.',
     link: {
       href: 'https://vue-components-iota.vercel.app/',
-      label: 'react-components',
+      label: 'vue-components',
     },
     logo: logoAnimaginary,
   },
