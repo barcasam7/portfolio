@@ -13,17 +13,31 @@ const projects = [
   {
     name: 'Spotify Profile',
     description:
-      'A React, Node and Typescript based application using Spotify\'s API to get your playlists and favorite arists. ',
-    link: { href: 'https://my-spotify-profile.vercel.app', label: 'my-spotify-profile' },
+      "A React, Node and Typescript based application using Spotify's API to get your playlists and favorite arists. ",
+    link: {
+      href: 'https://my-spotify-profile.vercel.app',
+      label: 'my-spotify-profile',
+    },
     logo: logoPlanetaria,
   },
   {
     name: 'React Components',
-    description:
-      'A web page of several components built using React and Typescript.',
-    link: { href: 'https://react-components-seven-kappa.vercel.app/', label: 'react-components' },
+    description: 'Several components built using React and Typescript.',
+    link: {
+      href: 'https://react-components-seven-kappa.vercel.app/',
+      label: 'react-components',
+    },
     logo: logoAnimaginary,
-  }
+  },
+  {
+    name: 'Vue Components',
+    description: 'Several components built using Vue 3 and Typescript.',
+    link: {
+      href: 'https://vue-components-iota.vercel.app/',
+      label: 'react-components',
+    },
+    logo: logoAnimaginary,
+  },
 ]
 
 function LinkIcon(props) {
@@ -42,10 +56,7 @@ export default function Projects() {
     <>
       <Head>
         <title>Projects - Sam Ward</title>
-        <meta
-          name="description"
-          content="Things I've made in my spare time."
-        />
+        <meta name="description" content="Things I've made in my spare time." />
       </Head>
       <SimpleLayout
         title="Things I've made in my spare time."
